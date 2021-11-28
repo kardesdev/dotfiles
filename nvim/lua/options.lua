@@ -1,0 +1,12 @@
+vim.o.number = true
+vim.o.visualbell = true
+vim.o.encoding = 'utf-8'
+vim.o.expandtab = true
+vim.o.tabstop = 2
+vim.o.shiftwidth = 2
+vim.o.number = true
+vim.o.termguicolors = true
+vim.g.mapleader = ' '
+vim.o.smartindent = true
+vim.o.hidden = true
+vim.o.showmode = false
