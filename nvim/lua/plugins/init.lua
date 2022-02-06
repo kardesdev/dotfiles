@@ -12,12 +12,27 @@ return require('packer').startup(function()
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
 
-  use 'williamboman/nvim-lsp-installer'
+  -- git
+  use {
+    'lewis6991/gitsigns.nvim',
+    requires = {'nvim-lua/plenary.nvim'}
+  }
+  -- sessions
+  use {
+    'rmagatti/auto-session'
+  }
+
+  -- themes
+  use 'folke/tokyonight.nvim'
   use 'ray-x/aurora'
+  use 'ful1e5/onedark.nvim'
+  use 'projekt0n/github-nvim-theme'
+  use 'marko-cerovac/material.nvim'
+  use 'EdenEast/nightfox.nvim'
   
   use {
-    'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    'ibhagwan/fzf-lua',
+    requires = {'kyazdani42/nvim-web-devicons'}
   }
   
   use {

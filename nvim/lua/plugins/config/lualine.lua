@@ -39,13 +39,15 @@ local config = {
     -- Disable sections and component separators
     component_separators = '',
     section_separators = '',
-    theme = {
+    -- theme = 'tokyonight',
+    theme = 'onedark-nvim',
+    -- theme = {
       -- We are going to use lualine_c an lualine_x as left and
       -- right section. Both are highlighted by c theme .  So we
       -- are just setting default looks o statusline
-      normal = { c = { fg = colors.fg, bg = colors.bg } },
-      inactive = { c = { fg = colors.fg, bg = colors.bg } },
-    },
+      -- normal = { c = { fg = colors.fg, bg = colors.bg } },
+      --inactive = { c = { fg = colors.fg, bg = colors.bg } },
+    --},
   },
   sections = {
     -- these are to remove the defaults
@@ -137,7 +139,7 @@ ins_left { 'progress', color = { fg = colors.fg, gui = 'bold' } }
 
 ins_left {
   'diagnostics',
-  sources = { 'nvim_lsp' },
+  sources = { 'nvim_diagnostic' },
   symbols = { error = ' ', warn = ' ', info = ' ' },
   diagnostics_color = {
     color_error = { fg = colors.red },

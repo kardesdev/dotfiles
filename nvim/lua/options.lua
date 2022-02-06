@@ -10,3 +10,4 @@ vim.g.mapleader = ' '
 vim.o.smartindent = true
 vim.o.hidden = true
 vim.o.showmode = false
+vim.g.tokyonight_style = 'night'
