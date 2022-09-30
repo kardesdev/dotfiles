@@ -69,10 +69,11 @@ local on_attach = function(client, bufnr)
 end
 
 
-nvim_lsp.tailwindcss.setup {}
+-- nvim_lsp.tailwindcss.setup {}
 -- Use a loop to conveniently call 'setup' on multiple servers and
 -- map buffer local keybindings when the language server attaches
-local servers = { 'gopls', 'rust_analyzer', 'tsserver', 'eslint' }
+-- local servers = { 'gopls', 'rust_analyzer', 'tsserver', 'eslint' }
+local servers = { 'gopls', 'rust_analyzer', 'tsserver', 'eslint'}
 for _, lsp in ipairs(servers) do
   if (lsp == 'rust_analyzer')
   then

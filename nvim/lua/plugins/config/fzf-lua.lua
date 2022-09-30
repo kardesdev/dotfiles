@@ -29,4 +29,10 @@ require'fzf-lua'.setup {
       vim.api.nvim_buf_set_keymap(0, 't', '<C-k>', '<Up>', opts)
     end,
   },
+  files = {
+    cmd = 'fdfind'
+  },
+  grep = {
+    rg_opts = "--column --line-number --no-heading --color=always --smart-case --max-columns=512 -g '!*lock*'",
+  }
 }

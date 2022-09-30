@@ -11,6 +11,7 @@ return require('packer').startup(function()
 
   use 'hrsh7th/cmp-vsnip'
   use 'hrsh7th/vim-vsnip'
+  use 'RRethy/vim-illuminate'
 
   -- git
   use {
@@ -25,10 +26,11 @@ return require('packer').startup(function()
   -- themes
   use 'folke/tokyonight.nvim'
   use 'ray-x/aurora'
-  use 'ful1e5/onedark.nvim'
   use 'projekt0n/github-nvim-theme'
   use 'marko-cerovac/material.nvim'
   use 'EdenEast/nightfox.nvim'
+  use 'tiagovla/tokyodark.nvim'
+  use 'navarasu/onedark.nvim'
   
   use {
     'ibhagwan/fzf-lua',
