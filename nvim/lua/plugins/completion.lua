@@ -1,4 +1,8 @@
 return {
+	{
+		"Exafunction/codeium.vim",
+		event = "BufEnter",
+	},
   {
     "hrsh7th/nvim-cmp",
     dependencies = {

@@ -1,3 +1,8 @@
+-- config to fix expo
+vim.o.swapfile = false
+vim.o.backup = false
+vim.o.writebackup = false
+vim.o.backupcopy = "yes"
 -- general config
 vim.g.filetype_v = "v"
 vim.o.number = true
@@ -5,7 +10,10 @@ vim.o.relativenumber = true
 vim.o.scrolloff = 4
 vim.o.visualbell = true
 vim.o.encoding = 'utf-8'
-vim.o.expandtab = false
+-- COMMEND 1st FOR TABS
+-- vim.o.expandtab = false
+vim.o.expandtab = true
+
 vim.o.tabstop = 2
 vim.o.shiftwidth = 2
 vim.o.number = true

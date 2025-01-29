@@ -15,6 +15,10 @@ end
 M.Spacer = function()
   return table.concat { '%#Spacer# ' }
 end
+
+M.Codeium = function()
+	return table.concat { '%#Codeium#', vim.api.nvim_call_function('codeium#GetStatusString', {}) }
+end
  
 M.FileInfo = function()
   local filename = (fn.expand '%' == '' and 'Empty ') or fn.expand '%:t'
